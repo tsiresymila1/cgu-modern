@@ -1,26 +1,191 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+@plugin "@tailwindcss/typography";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Supabase-inspired Light Mode (default, but we mostly focus on Dark) */
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.13 0.028 261.692);
+
+  --border: oklch(0.928 0.006 264.531);
+  --input: oklch(0.928 0.006 264.531);
+  --ring: oklch(0.707 0.022 261.325); /* Supabase Green as default accent */
+
+  --muted: oklch(0.967 0.003 264.542);
+  --muted-foreground: oklch(0.551 0.027 264.364);
+
+  /* App Specific (Default) */
+  --app-primary: #3ecf8e;
+  --app-secondary: #34b27b;
+  --app-accent: #24b47e;
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.13 0.028 261.692);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.13 0.028 261.692);
+  --primary: oklch(0.21 0.034 264.665);
+  --primary-foreground: oklch(0.985 0.002 247.839);
+  --secondary: oklch(0.967 0.003 264.542);
+  --secondary-foreground: oklch(0.21 0.034 264.665);
+  --accent: oklch(0.967 0.003 264.542);
+  --accent-foreground: oklch(0.21 0.034 264.665);
+  --destructive: oklch(0.577 0.245 27.325);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0.002 247.839);
+  --sidebar-foreground: oklch(0.13 0.028 261.692);
+  --sidebar-primary: oklch(0.21 0.034 264.665);
+  --sidebar-primary-foreground: oklch(0.985 0.002 247.839);
+  --sidebar-accent: oklch(0.967 0.003 264.542);
+  --sidebar-accent-foreground: oklch(0.21 0.034 264.665);
+  --sidebar-border: oklch(0.928 0.006 264.531);
+  --sidebar-ring: oklch(0.707 0.022 261.325);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --font-outfit: var(--font-outfit);
+
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --color-sidebar-border: var(--sidebar-border);
+
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+
+  --color-sidebar-accent: var(--sidebar-accent);
+
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+
+  --color-sidebar-primary: var(--sidebar-primary);
+
+  --color-sidebar-foreground: var(--sidebar-foreground);
+
+  --color-sidebar: var(--sidebar);
+
+  --color-chart-5: var(--chart-5);
+
+  --color-chart-4: var(--chart-4);
+
+  --color-chart-3: var(--chart-3);
+
+  --color-chart-2: var(--chart-2);
+
+  --color-chart-1: var(--chart-1);
+
+  --color-destructive: var(--destructive);
+
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-accent: var(--accent);
+
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-secondary: var(--secondary);
+
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-primary: var(--primary);
+
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-popover: var(--popover);
+
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --radius-md: calc(var(--radius) - 2px);
+
+  --radius-lg: var(--radius);
+
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --radius-2xl: calc(var(--radius) + 8px);
+
+  --radius-3xl: calc(var(--radius) + 12px);
+
+  --radius-4xl: calc(var(--radius) + 16px);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root { /* Supabase Dark */
+
+    --card: #232323;
+    --card-foreground: #ededed;
+
+    --border: #2e2e2e;
+    --input: #2e2e2e;
+    --ring: #3ecf8e;
+
+    --muted: #282828;
+    --muted-foreground: #888888;
   }
 }
 
+/* Force Dark Mode class strategy if needed, but media query handles system prefs */
+.dark {
+  --background: #1c1c1c;
+  --foreground: #ededed;
+
+  --card: #232323;
+  --card-foreground: #ededed;
+
+  --popover: #232323;
+  --popover-foreground: #ededed;
+
+  --primary: #3ecf8e;
+  --primary-foreground: #1c1c1c;
+
+  --secondary: #282828;
+  --secondary-foreground: #ededed;
+
+  --muted: #282828;
+  --muted-foreground: #888888;
+
+  --accent: #2e2e2e;
+  --accent-foreground: #ededed;
+
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  --border: #2e2e2e;
+  --input: #2e2e2e;
+  --ring: #3ecf8e;
+
+  --sidebar: #232323;
+  --sidebar-foreground: #ededed;
+  --sidebar-primary: #3ecf8e;
+  --sidebar-primary-foreground: #1c1c1c;
+  --sidebar-accent: #2e2e2e;
+  --sidebar-accent-foreground: #ededed;
+  --sidebar-border: #2e2e2e;
+  --sidebar-ring: #3ecf8e;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-outfit);
+  @apply antialiased;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-size: 0.95rem;
+  }
 }

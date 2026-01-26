@@ -1,0 +1,35 @@
+{
+  "apps": [
+    {
+      "name": "ZenFlow",
+      "slug": "zenflow",
+      "theme": {
+        "primary": "#4F46E5",
+        "secondary": "#818CF8",
+        "accent": "#F472B6"
+      },
+      "pages": {
+        "home": "# ZenFlow - Terms and Privacy\n\nWelcome to ZenFlow's legal hub.\n\n### About ZenFlow\nZenFlow is a productivity application designed to help you achieve flow state through minimalist task management and ambient soundscapes.\n\n### Target Audience\nEngineers, writers, and creative professionals seeking deep work.\n\n### Main Features\n- Focus timer with circadian rhythm integration\n- AI-powered task prioritization\n- Distraction blocking",
+        "privacy_policy": "# Privacy Policy for ZenFlow\n\n**Last Updated: January 26, 2026**\n\n## 1. Introduction\nWelcome to ZenFlow. We respect your privacy and represent that we collect minimal data.\n\n## 2. Data Collected\n- **Account Info**: Email address (for sync).\n- **Usage Data**: Focus duration, task completion rates (anonymized).\n- **Device Info**: OS version for debugging.\n\n## 3. How Data is Used\n- To sync your tasks across devices.\n- To provide insights on your productivity trends.\n- To improve app stability.\n\n## 4. Contact\nFor privacy concerns, email: privacy@zenflow.app",
+        "data_deletion": "# Data Deletion\n\n## Right to Erasure\nYou have the right to request deletion of all your personal data from our servers.\n\n## What is deleted?\n- Your user account profile.\n- All synced tasks and history.\n- Any personal settings.\n\n## Process\nPlease use the form below to request deletion. We will process your request within 30 days.\n\n**Note**: Anonymized aggregated stats may be retained."
+      }
+    },
+    {
+      "name": "EcoTrack",
+      "slug": "ecotrack",
+      "theme": {
+        "primary": "#10B981",
+        "secondary": "#34D399",
+        "accent": "#FBBF24"
+      },
+      "pages": {
+        "home": "# EcoTrack - Legal Information\n\nTransparency for a greener future.\n\n### About EcoTrack\nEcoTrack helps individuals monitor their carbon footprint through daily activity logging.\n\n### Who is it for?\nEnvironmentally conscious individuals and families.\n\n### Features\n- Carbon calculator\n- Sustainable habits gamification\n- Community challenges",
+        "privacy_policy": "# Privacy Policy for EcoTrack\n\n**Effective Date: Jan 26, 2026**\n\n## Overview\nEcoTrack takes data stewardship seriously.\n\n## Data Collection\n- **Location Data**: Optional, for accurate travel footprint calculation.\n- **Consumption Logs**: Energy bills, dietary choices.\n\n## Third Parties\nWe use OpenCarbon API for conversion factors. No personal data is shared.\n\n## Contact\nds.requests@ecotrack.org",
+        "data_deletion": "# Delete Your EcoTrack Data\n\nWe are sad to see you go, but we respect your data sovereignty.\n\n## Retention Policy\nWe delete personal identifiers immediately upon request. Carbon impact data is anonymized and kept for global statistics unless explicitly requested otherwise.\n\nPlease fill out the form below to proceed."
+      }
+    }
+  ],
+  "global_pages": {
+    "home": "# Legal & Privacy Platform\n\nWelcome to the unified legal portal for our suite of applications. Here you can find Terms of Service, Privacy Policies, and Data Deletion instructions for all our products.\n\n## Our Commitment\nWe are committed to transparency, data minimization, and user control. We direct you to the specific legal documents for each application below.\n\n### Contact Us\nFor general legal inquiries, please contact: **tsiresymila@gmail.com**"
+  }
+}
