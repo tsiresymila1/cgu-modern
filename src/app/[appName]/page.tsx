@@ -36,8 +36,8 @@ export default async function AppPage({ params }: PageProps) {
         </CardHeader>
         <CardContent>
           <Button variant="link" className="p-0 h-auto text-primary hover:text-primary/80 font-medium" asChild>
-            <a href={`mailto:support@${app.slug}.example.com`}>
-                support@{app.slug}.example.com
+            <a href={`mailto:tsiresymila@gmail.com`}>
+                tsiresymila@gmail
             </a>
           </Button>
         </CardContent>

@@ -12,7 +12,7 @@ export default async function Home() {
     return (
         <div className="min-h-screen bg-[#1c1c1c] text-[#ededed] font-outfit selection:bg-white/10">
             {/* Hero Section */}
-            <section className="relative overflow-hidden pt-32 pb-24 px-4 sm:px-6 lg:px-8 border-b border-[#2e2e2e] bg-[length:40px_40px] bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)]">
+            <section className="h-[100vh] flex justify-center items-center relative overflow-hidden px-4 sm:px-6 lg:px-8 border-b border-[#2e2e2e] bg-[length:40px_40px] bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)]">
                 <div className="absolute top-0 w-full h-full bg-gradient-to-b from-[#1c1c1c] via-transparent to-[#1c1c1c] z-0 pointer-events-none" />
 
                 <div className="max-w-5xl mx-auto relative z-10 text-center">
@@ -30,24 +30,17 @@ export default async function Home() {
                     </p>
 
                     <div className="flex flex-wrap justify-center gap-4">
-                        <Button size="lg" className="rounded-xl h-12 px-8 bg-white text-black hover:bg-white/90 font-bold" asChild>
+                        <Button size="lg" className="rounded-md h-12 px-8 bg-white text-black hover:bg-white/90 font-bold" asChild>
                             <a href="#apps">
                                 View Applications <ArrowRight className="w-4 h-4 ml-2" />
                             </a>
                         </Button>
-                        <Button size="lg" variant="outline" className="rounded-xl h-12 px-8 border-[#2e2e2e] bg-[#232323] text-white hover:bg-[#2e2e2e] font-bold" asChild>
+                        <Button size="lg" variant="outline" className="rounded-md h-12 px-8 border-[#2e2e2e] bg-[#232323] text-white hover:bg-[#2e2e2e] font-bold" asChild>
                             <Link href="/admin">
                                 Admin Access
                             </Link>
                         </Button>
                     </div>
-                </div>
-            </section>
-
-            {/* Intro Section */}
-            <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-                <div className="prose prose-invert prose-lg max-w-none text-[#888888]">
-                    <MarkdownRenderer content={globalContent.home} />
                 </div>
             </section>
 

@@ -25,7 +25,7 @@ export default async function DataDeletionPage({ params }: PageProps) {
           <Separator className="bg-[#2e2e2e]" />
       </div>
 
-      <Card className="bg-transparent border-[#2e2e2e] shadow-none">
+      <Card className="bg-transparent border-none shadow-none">
         <CardContent className="pt-6 prose prose-invert max-w-none">
           <MarkdownRenderer content={app.pages.data_deletion} />
         </CardContent>

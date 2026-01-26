@@ -24,7 +24,7 @@ export default async function PrivacyPolicyPage({ params }: PageProps) {
           <Separator className="bg-[#2e2e2e]" />
       </div>
       
-      <Card className="bg-transparent border-[#2e2e2e] shadow-none">
+      <Card className="bg-transparent shadow-none border-none">
         <CardContent className="pt-6 prose prose-invert max-w-none">
           <MarkdownRenderer content={app.pages.privacy_policy} />
         </CardContent>
