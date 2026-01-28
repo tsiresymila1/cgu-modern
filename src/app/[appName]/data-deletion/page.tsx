@@ -20,8 +20,8 @@ export default async function DataDeletionPage({ params }: PageProps) {
   return (
     <div className="space-y-12">
       <div className="space-y-4">
-          <h2 className="text-4xl font-bold text-foreground tracking-tight">Data Deletion</h2>
-          <p className="text-muted-foreground text-lg">Manage your data sovereignty and request deletion for <span className="text-primary font-medium">{app.name}</span>.</p>
+          <h2 className="text-4xl font-bold text-foreground tracking-tight text-xl">Data Deletion</h2>
+          <p className="text-muted-foreground text-md">Manage your data sovereignty and request deletion for <span className="text-primary font-medium">{app.name}</span>.</p>
           <Separator className="bg-[#2e2e2e]" />
       </div>
 
@@ -34,8 +34,8 @@ export default async function DataDeletionPage({ params }: PageProps) {
       <div className="pt-12">
         <div className="max-w-2xl mx-auto space-y-8">
             <div className="text-center">
-                <h3 className="text-2xl font-bold text-foreground">Submit Request</h3>
-                <p className="text-muted-foreground mt-2">Fill out the form below to initiate the deletion process.</p>
+                <h3 className="text-2xl font-bold text-foreground text-xl">Submit Request</h3>
+                <p className="text-muted-foreground mt-2 text-md">Fill out the form below to initiate the deletion process.</p>
             </div>
             <DeletionForm appName={app.name} />
         </div>

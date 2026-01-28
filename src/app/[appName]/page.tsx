@@ -61,8 +61,8 @@ export default async function AppPage({ params }: PageProps) {
         <Link href={`/${app.slug}/data-deletion`} className="group">
           <Card className="h-full bg-transparent border-[#2e2e2e] hover:border-primary/50 hover:bg-primary/5 transition-all">
             <CardHeader>
-              <CardTitle className="group-hover:text-primary transition-colors">Data Deletion</CardTitle>
-              <CardDescription>Manage your data sovereignty and request deletion.</CardDescription>
+              <CardTitle className="group-hover:text-primary transition-colors text-xl!">Data Deletion</CardTitle>
+              <CardDescription className="text-md">Manage your data sovereignty and request deletion.</CardDescription>
             </CardHeader>
             <CardFooter>
               <span className="flex items-center text-sm font-medium text-primary">
