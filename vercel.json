@@ -1,7 +1,7 @@
 {
   "crons": [
     {
-      "path": "/api/keep-alive",
+      "path": "/api/supabase-keepalive",
       "schedule": "0 0 */5 * *"
     }
   ]
