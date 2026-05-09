@@ -1,0 +1,9 @@
+{
+  "crons": [
+    {
+      "path": "/api/supabase-keepalive",
+      "schedule": "0 0 */3 * *",
+      "secret": "CRON_SECRET"
+    }
+  ]
+}
